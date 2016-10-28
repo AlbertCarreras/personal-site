@@ -1,0 +1,209 @@
+/* 
+===========================================RESET
+Note: http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+License: none (public domain) 
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* 
+HTML5 display-role reset for older browsers
+*/
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/* 
+===========================================Grid styles
+Notes: Box sizing for all browsers = border-box so all margin+border+padding
+are included within the box size.
+* selector to select all elements, as well as making pseudo elements 
+use the same model, which otherwise wouldn't be selected by the * selector alone
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* 
+===========================================Clear fix
+========Group class on header, footer========
+Note: Containment for floating elements
+*/
+
+.group:before, 
+.group:after {
+  content: "";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  clear: both;
+  *zoom:1; 
+}
+
+/* 
+========Buttons (under hero container class)========
+*/
+
+.btn {
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 400;
+  letter-spacing: .5px;
+  display: inline-block;
+  margin-left: 30px;
+  text-decoration: none;
+
+}
+
+.btn-alt {
+  border: 0;
+  padding: 10px 30px;
+}
+
+.btn-alt:hover {
+  background: #fff;
+  color: #648880;
+}
+
+.btn-default {
+  border: 0;
+  background: #648880;
+  padding: 11px 30px;
+  font-size: 14px;
+}
+
+.btn-default:hover {
+  background: #77a198;
+}
+
+/* 
+===========================================Overall Customization
+*/
+
+body {
+  background: #293f50;
+  color: #fff;
+  font: 300 16px/22px , "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+} 
+
+.container {
+  margin: 10px auto; /* margin:auto ==> it keeps the container centered
+  with 960px-width */
+  width: 960px;
+  font: 300 16px/22px "Poiret One" ,"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* 
+===========================================Header
+*/
+
+header{
+  padding-top: 90px;
+}
+
+.main-header {
+  height: 200px;
+  text-align: center;
+}
+
+.main-header h1 {
+  font-size: 5em;
+  padding: 20px;
+}
+
+.main-photo {
+  float:left;
+  border-radius: 50%;
+  height: 200px;
+  }
+
+/* 
+===========================================Body
+*/
+
+.description p {
+  width: 200px;
+  float: left;
+  text-align: center;
+}
+
+.links {
+  float: left;
+  width: 760px;
+  text-align: center;
+
+}
+
+.links img {
+  height: 100px;
+  margin: 5px;
+  border-radius: 60%;
+  border: 2px solid #fff;
+  background-color: rgba(255, 255, 255, .3);
+}
+
+.links img:hover {
+  height: 100px;
+  margin: 5px;
+  border-radius: 60%;
+  border: 2px solid #fff;
+  background-color: #fff;
+}
+
+/* 
+
+===========================================Footer
+*/
+
+
